@@ -26,7 +26,7 @@ def clear_field():
 root = tk.Tk()
 root.geometry("500x300")
 
-# Create a Text widget to display the equation
+# Create a display box 
 text_result = tk.Text(root, height=4, width=16, font=("Arial", 24))
 text_result.grid(columnspan=5)
 
@@ -61,7 +61,7 @@ button_9.grid(row=0, column=2)
 button_0 = tk.Button(root, text="0", command=lambda: add_to_equation(0), width=5, font=("Arial", 18))
 button_0.grid(row=3, column=1)
 
-# Create operator buttons
+# Create +-=* buttons 
 button_add = tk.Button(root, text="+", command=lambda: add_to_equation('+'), width=5, font=("Arial", 18))
 button_add.grid(row=0, column=3)
 
@@ -74,7 +74,7 @@ button_multiply.grid(row=2, column=3)
 button_divide = tk.Button(root, text="/", command=lambda: add_to_equation('/'), width=5, font=("Arial", 18))
 button_divide.grid(row=3, column=3)
 
-# Create clear and equals buttons
+# Clear and equal buttons 
 button_clear = tk.Button(root, text="C", command=clear_field, width=5, font=("Arial", 18))
 button_clear.grid(row=3, column=0)
 
