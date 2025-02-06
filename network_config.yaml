@@ -1,0 +1,10 @@
+- name: Configure Cisco Routers
+  hosts: cisco_devices
+  gather_facts: no
+  tasks:
+    - name: Configure Interfaces
+      ios_config:
+        lines:
+          - description Automated by Ansible
+          - no shutdown
+        parents: interface GigabitEthernet0/1
